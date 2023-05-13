@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "29825b4c-6552-41dd-a2e0-989ac59497e3",
+		"name": "Parking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27397190"
+	},
+	"item": [
+		{
+			"name": "feat: listar autos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parking/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feat: registrar auto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"licensePlate\": \"ABC-123\",\r\n    \"color\":\"Azul\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
